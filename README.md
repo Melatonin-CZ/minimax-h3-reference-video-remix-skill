@@ -40,6 +40,11 @@ Packaged file:
 - References: `skill-source/references/`
 - Validation scripts: `skill-source/scripts/`
 
+### Related Skills
+- Commercial Ad Director: https://github.com/Melatonin-CZ/minimax-h3-commercial-ad-director-skill
+- Director Prompt: https://github.com/Melatonin-CZ/minimax-h3-director-prompt-skill
+- Instagram Style Director: https://github.com/Melatonin-CZ/minimax-h3-instagram-style-director-skill
+
 ### Typical Use
 Use this skill when you want to analyze an existing video (shots, motion, text, audio) and then recreate or remix it with controlled layer-level changes.
 
@@ -71,6 +76,11 @@ Use this skill when you want to analyze an existing video (shots, motion, text, 
 - 参考资料：`skill-source/references/`
 - 校验脚本：`skill-source/scripts/`
 
+### 关联 Skills
+- 商业广告导演： https://github.com/Melatonin-CZ/minimax-h3-commercial-ad-director-skill
+- 导演风格提示词： https://github.com/Melatonin-CZ/minimax-h3-director-prompt-skill
+- Instagram 风格导演： https://github.com/Melatonin-CZ/minimax-h3-instagram-style-director-skill
+
 ### 适用场景
 当你需要先精确拆解现有视频（镜头、动作、文字、音频），再按层控制“保留/改写/替换”生成可执行重制提示词时，使用此 skill。
 
@@ -101,6 +111,11 @@ Use this skill when you want to analyze an existing video (shots, motion, text, 
 - コアワークフロー: `skill-source/SKILL.md`
 - 参照資料: `skill-source/references/`
 - 検証スクリプト: `skill-source/scripts/`
+
+### 関連 Skills
+- Commercial Ad Director: https://github.com/Melatonin-CZ/minimax-h3-commercial-ad-director-skill
+- Director Prompt: https://github.com/Melatonin-CZ/minimax-h3-director-prompt-skill
+- Instagram Style Director: https://github.com/Melatonin-CZ/minimax-h3-instagram-style-director-skill
 
 ### 主な利用シーン
 既存動画を正確に分解し、どのレイヤーを保持・適応・置換するかを制御しながら、実行可能なリミックスプロンプトを作りたい場合に使用します。
