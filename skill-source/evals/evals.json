@@ -1,0 +1,19 @@
+{
+  "skill_name": "minimax-h3-reference-video-remix",
+  "evals": [
+    {
+      "id": 1,
+      "name": "dance-video-subject-swap-full-reference",
+      "prompt": "I have a 10 second reference video of a dancer doing a spin routine, saved at reference.mp4. I want to keep her exact camera work and choreography timing but generate the same routine performed by my own character, whose reference image I'll attach. Full reference mode.",
+      "expected_output": "Work mode named as visual_remix_locked or selective_remix, evidence: video, ffmpeg extraction steps described (baseline sample + scene-change detection + dense sample for the action chart), a 0.1s action chart for the spin routine, a deconstruction with camera terms from the base guide's controlled vocabulary only, a layer policy table with camera/timeline/actions preserved and visuals replaced, and a final prompt in VIDEO_PROMPT_WRITING_GUIDE_ref_en.md full-reference syntax referencing <Subject 1> with a [reference generation] or [video editing] task-type prefix, no process/meta-commentary language.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "poster-text-only-deconstruction-no-video",
+      "prompt": "Can you deconstruct this video for me and tell me exactly what the Chinese text on the background poster says? (no video file actually provided/attached)",
+      "expected_output": "The skill should not fabricate a deconstruction or invent poster text. It should explicitly state that no video file is available, ask for one or offer to proceed only in prompt_only/transcript_only evidence mode if the user can describe it, and should not claim any reading of on-screen text without having actually processed frames.",
+      "files": []
+    }
+  ]
+}
