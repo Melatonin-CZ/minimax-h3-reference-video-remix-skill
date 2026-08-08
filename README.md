@@ -1,6 +1,16 @@
 # MiniMax H3 Reference Video Remix Skill
 
-English | 简体中文
+![Docs](https://img.shields.io/badge/Docs-EN%20%7C%20ZH--CN%20%7C%20JA-blue)
+![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Open%20Standard-2ea44f)
+![Runtimes](https://img.shields.io/badge/Runtimes-Claude%20Code%20%7C%20Codex%20CLI-orange)
+
+English | 简体中文 | 日本語
+
+## Table of Contents
+
+- [English](#english)
+- [简体中文](#简体中文)
+- [日本語](#日本語)
 
 ## English
 
@@ -63,3 +73,34 @@ Use this skill when you want to analyze an existing video (shots, motion, text, 
 
 ### 适用场景
 当你需要先精确拆解现有视频（镜头、动作、文字、音频），再按层控制“保留/改写/替换”生成可执行重制提示词时，使用此 skill。
+
+## 日本語
+
+### 概要
+この skill は、参照動画を evidence-first で分解し、MiniMax H3（Hailuo 3.0）向けのリミックス用プロンプトを構築します。
+ショット単位分析、0.1秒アクションタイムライン、OCR重視の文字抽出、レイヤー別 preserve/adapt/replace 方針に最適化されています。
+
+### 特長
+- 分解のみ、または分解 + リミックス出力の両ワークフローに対応
+- 公式 MiniMax H3 構文（基本モード + フルリファレンス）に準拠
+- 中国語テキスト精度を重視した OCR プロトコルを含む
+- deconstruction/remix JSON 向けの任意 Python バリデーターを同梱
+- Agent Skills 共通形式で Claude Code/Cowork と Codex CLI に対応
+
+### インストール
+インストール手順: `skill-source/INSTALL.md`
+
+パッケージ済みファイル:
+- `minimax-h3-reference-video-remix.skill`
+
+### 要件
+- 実動画解析には実行環境で `ffmpeg` と `ffprobe` が利用可能であること
+- `skill-source/scripts/` の任意バリデーター実行には Python 3 が必要
+
+### 主要ドキュメント
+- コアワークフロー: `skill-source/SKILL.md`
+- 参照資料: `skill-source/references/`
+- 検証スクリプト: `skill-source/scripts/`
+
+### 主な利用シーン
+既存動画を正確に分解し、どのレイヤーを保持・適応・置換するかを制御しながら、実行可能なリミックスプロンプトを作りたい場合に使用します。
